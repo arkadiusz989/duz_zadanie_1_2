@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <title>Bergolio</title>
-</head>
-<body>
-  <h1>Papież franciszek</h1>
-  <hr>
-  <p>Bergolio to nazwisko zmarłego już <span style="color:red">papieża Franciszka</span></p>
-  <br>
-  <ol>Lista zasług bergolia
-    <li>Był papieżem</li>
-    <li>Był chrześcijaninem</li>
-  </ol>
-  <ul>Kim nie był
-    <li><u>Nie</u> był muzułmanem</li>
-    <li><u>Nie</u> był astronautą</li>
-  </ul>
-  <p>Powyższe dane, ale w formie tabeli:</p>
-  <table>
-    <tr>
-      <th>Kim był</th>
-      <th>Kim nie był</th>
-    </tr>
-    <tr>
-      <td>Papieżem</td>
-      <td>Astronautą</td>
-    </tr>
-  </table>
-  <img src="https://m.media-amazon.com/images/M/MV5BNGYyM2Y5M2ItMzRiNi00MGQzLThmY2EtZWEyZDJiOWE5ZTNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" style="width:500px;height:600px;">
-  <p>Zdjęcie papieża franciszka</p>
-  <a href="https://pl.wikipedia.org/wiki/Franciszek_(papie%C5%BC)">Link do strony o papieżu</a>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bergolio</title>
+    </head>
+    <body>
+      <h1>Papież Franciszek</h1>
+      <hr>
+      <p>Bergolio to nazwisko zmarłego już <span style="color:red">papieża Franciszka</span> </p>
+      <br>
+      <ol> Lista zasług Bergolia
+        <li>Był papieżem</li>
+        <li>Był chrześcijaninem</li>
+      </ol>
+      <ul> Kim nie był
+          <li><u>Nie</u> był muzułmanem</li>
+          <li><u>Nie</u> był astronautą</li
+      </ul>
+           <p>Powyższe dane, ale w formie tabeli:</p>
+           <table border="1">
+            <tr>
+              <th>Kim był</th>
+              <th>Kim nie był</th>
+            </tr>
+            <tr>
+              <td>Papieżem</td>
+              <td>Astronautą</td>
+            </tr>
+              </table>
+            <br>
+
+<img
+src="https://m.media-amazon.com/images/M/MV5BNGYyM2Y5M2ItMzRiNi00MGQzLThmY2EtZWEyZDJiOWE5ZTNiXkEyXkFqcGc@.V1_FMjpg_UX1000.jpg"
+style="width:500px;height:600px;"
+<p>Zdjęcie papieża Franciszka</p>
+<a href="https://pl.wikipedia.org/wiki/Franciszek_(papie%C5%BC)"> Link do strony o papieżu </a>
+
+<br><br>
+
+<button onclick="window.location.href='https://pl.wikipedia.org/wiki/Franciszek_(papie%C5%BC)'"> Przejdź do strony o papieżu </button>
+
+<br><br>
+
+<h2>Film</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dnZaQ3STLaM" title="Film z YouTube" allowfullscreen> </iframe>
+
+<br><br>
+
+<h2>Odliczanie do wakacji</h2> <p id="wakacje"></p> <script> function odliczanie() { var teraz = new Date(); var wakacje = new Date(teraz.getFullYear(), 6, 1); if (teraz >= wakacje) { wakacje = new Date(teraz.getFullYear() + 1, 6, 1); } var roznica = wakacje - teraz; var dni = Math.floor(roznica / (1000 * 60 * 60 * 24)); var godziny = Math.floor((roznica / (1000 * 60 * 60)) % 24); var minuty = Math.floor((roznica / (1000 * 60)) % 60); var sekundy = Math.floor((roznica / 1000) % 60); document.getElementById("wakacje").innerHTML = "Do wakacji pozostało: " + dni + " dni, " + godziny + " godzin, " + minuty + " minut i " + sekundy + " sekund."; } odliczanie(); setInterval(odliczanie, 1000); </script> </body> </html>
